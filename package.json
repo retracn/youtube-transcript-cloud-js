@@ -1,0 +1,24 @@
+{
+  "name": "youtube-transcript-cloud",
+  "version": "1.0.0",
+  "description": "Drop-in replacement for the youtube-transcript npm package that works in production (Vercel, AWS Lambda, Render): same API, no blocked requests.",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["index.cjs", "index.mjs", "index.d.ts"],
+  "scripts": { "test": "node --test test/fetch.test.cjs" },
+  "engines": { "node": ">=18" },
+  "keywords": ["youtube-transcript", "youtube", "transcript", "captions", "subtitles", "vercel", "serverless", "ai", "rag", "apify"],
+  "repository": { "type": "git", "url": "https://github.com/retracn/youtube-transcript-cloud-js.git" },
+  "homepage": "https://github.com/retracn/youtube-transcript-cloud-js#readme",
+  "author": "AutomationNation",
+  "license": "MIT"
+}
